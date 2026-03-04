@@ -7,7 +7,7 @@
     tooltipPosition = tooltipPosition || 'right';
     var tpl = pskl.utils.Template.get('drawingTool-item-template');
     return pskl.utils.Template.replace(tpl, {
-      cssclass : ['tool-icon', 'icon-' + tool.toolId].join(' '),
+      iconclass : 'icon-' + tool.toolId,
       toolid : tool.toolId,
       title : this.getTooltipText(tool),
       tooltipposition : tooltipPosition
