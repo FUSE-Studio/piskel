@@ -37,7 +37,8 @@
   };
 
   ns.TransformationsController.prototype.onTransformationClick_ = function (evt) {
-    var toolId = evt.target.dataset.toolId;
+    var toolElement = evt.target.closest('[data-tool-id]');
+    var toolId = toolElement && toolElement.dataset.toolId;
     if (toolId) {
       this.applyTool(toolId, evt);
     }
