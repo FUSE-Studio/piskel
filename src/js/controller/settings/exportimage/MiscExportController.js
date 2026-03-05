@@ -3,8 +3,9 @@
 
   var BLACK = '#000000';
 
-  ns.MiscExportController = function (piskelController) {
+  ns.MiscExportController = function (piskelController, exportController) {
     this.piskelController = piskelController;
+    this.exportController = exportController;
   };
 
   pskl.utils.inherit(ns.MiscExportController, pskl.controller.settings.AbstractSettingController);
@@ -81,6 +82,11 @@
     var frameIndex = this.piskelController.getCurrentFrameIndex();
     var fileName = this.getPiskelName_() + '-' + (frameIndex + 1) + '.png';
     var canvas = this.piskelController.renderFrameAt(frameIndex, true);
+
+    var zoom = this.exportController.getExportZoom();
+    if (zoom !== 1) {
+      canvas = pskl.utils.ImageResizer.resize(canvas, canvas.width * zoom, canvas.height * zoom, false);
+    }
 
     pskl.utils.BlobUtils.canvasToBlob(canvas, function(blob) {
       pskl.utils.FileUtils.downloadAsFile(blob, fileName);
