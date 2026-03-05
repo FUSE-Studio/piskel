@@ -37,10 +37,19 @@
     align-items: center;
     justify-content: center;
   }
+  a.new-piskel-desktop, a.new-piskel-desktop:visited {
+    color: black;
+  }
 </style>
 <div class="fake-piskelapp-header">
   <a
-    href="index.html"
+    href="/dashboard"
+    title="Go back to FUSE site"
+    rel="tooltip"
+    style="float:left"
+    ><img src="logo.png" alt="FUSE Logo" style="scale:0.75"></a>
+  <a
+    href="/pixelart"
     target="_blank"
     class="new-piskel-desktop button button-primary"
     title="Create a new sprite"
