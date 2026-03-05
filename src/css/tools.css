@@ -9,7 +9,7 @@
 
 .tool-icon > i {
   display: block;
-  transform: scale(0.83);
+  /* transform: scale(0.83); */
 }
 
 .tool-icon.selected {
