@@ -102,10 +102,7 @@
 .export-resize {
   margin: 10px 0;
   overflow: hidden;
-}
-
-.export-resize > * {
-  float: left;
+  display: flex;
 }
 
 .export-resize > *:not(:last-child) {
@@ -113,7 +110,7 @@
 }
 
 .export-resize > .resize-field {
-  width: 70px;
+  min-width: 0;
 }
 
 .export-resize > .resize-label {
@@ -145,8 +142,8 @@
 }
 
 .export-panel-gif .button {
-  margin-right: 5px;
-  width: 75px;
+  margin-right: 15px;
+  width: 100px;
   flex-shrink: 0;
 }
 
