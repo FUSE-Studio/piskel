@@ -55,8 +55,8 @@
 
 .sticky-section {
   position: fixed;
-  top: 0;
-  bottom: 0;
+  top: 50px;
+  bottom: 50px;
   z-index: 1000;
 }
 

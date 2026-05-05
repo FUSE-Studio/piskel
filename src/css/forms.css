@@ -65,8 +65,8 @@
 .button[disabled],
 .button[disabled]:hover {
   cursor:default;
-  background-color: #aaa;
-  color: #777;
+  background-color: #acacc1;
+  color: #282937;
 }
 
 .import-size-field,

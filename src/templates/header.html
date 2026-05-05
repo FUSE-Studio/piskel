@@ -1,15 +1,16 @@
 <style type="text/css">
   #main-wrapper {
-    margin-top: 40px;
+    margin-top: 55px;
   }
 
   .fake-piskelapp-header {
     position: relative;
     text-align: center;
-    height: 40px;
-    line-height: 40px;
+    height: 55px;
+    line-height: 55px;
     font-size: 24px;
-    background: black;
+    background: #18181f;
+    border-bottom: 1px solid #3a3a4e;
     color: gold;
     z-index: 100;
   }
@@ -22,14 +23,14 @@
     position: absolute;
 
     display: flex;
-    top: 7px;
+    top: 12px;
     right: 7px;
 
-    height: 26px;
-    width: 26px;
+    height: 32px;
 
-    border-radius: 3px;
-    font-size: 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
     color: black;
     background: gold;
     text-decoration: none;
@@ -44,7 +45,7 @@
   .header-history-button {
     float: left;
     margin: 5px 0 0 8px;
-    height: 30px;
+    height: 40px;
     padding: 0 6px;
     border: none;
     border-radius: 3px;
@@ -69,6 +70,12 @@
     filter: grayscale(1);
     opacity: 0.4;
   }
+  #logo {
+    height: 48px;
+    width: auto;
+    margin-left: 24px;
+    margin-top: 4px;
+  }
 </style>
 <div class="fake-piskelapp-header">
   <a
@@ -76,7 +83,7 @@
     title="Go back to FUSE site"
     rel="tooltip"
     style="float:left"
-    ><img src="logo.png" alt="FUSE Logo" style="scale:0.75"></a>
+    ><img src="logo.png" alt="FUSE Logo" id="logo"></a>
   <button
     type="button"
     class="header-history-button header-undo-button"
@@ -96,6 +103,6 @@
     title="Create a new sprite"
     rel="tooltip"
     data-placement="left"
-    >+</a>
+    >New</a>
   <span class="piskel-name"></span>
 </div>

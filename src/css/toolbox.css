@@ -1,5 +1,5 @@
 .toolbox-container {
-  border: 2px solid #888;
+  border: 2px solid #2d3e3d;
   font-size: medium;
   color: white;
   text-align: left;
@@ -14,7 +14,7 @@
   font-size: 15px;
   /* reset for firefox */
   height: 16px;
-  background: #222;
+  background: #1d1d27;
 }
 
 .toolbox-buttons {
@@ -27,16 +27,16 @@
 .toolbox-buttons .button {
   /* Override border propery on .button elements from form.css */
   border-style: solid;
-  border-color: #333;
+  border-color: #282937;
   border-width: 0 1px 0 0;
   border-radius: 0;
 
-  background-color: #3f3f3f;
+  background-color: #282937;
 }
 
 .toolbox-buttons .button[disabled],
 .toolbox-buttons .button[disabled]:hover {
-  background-color: #aaa;
+  background-color: #acacc1;
 }
 
 .toolbox-buttons button:last-child {

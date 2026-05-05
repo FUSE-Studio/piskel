@@ -3,7 +3,7 @@ html, body {
   margin : 0;
   overflow: hidden;
   cursor : default;
-  font-family: Arial;
+  font-family: 'Inter', Arial, sans-serif;
   font-size: 11px;
   line-height: 1.25;
   -webkit-touch-callout: none;
@@ -24,7 +24,7 @@ ul, li {
 button,
 input,
 input[type="submit"] {
-  font-family: Arial;
+  font-family: 'Inter', Arial, sans-serif;
 }
 
 /* IE11 applies a big default margin for range inputs */
