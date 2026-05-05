@@ -28,6 +28,8 @@ We also use the following **libraries** :
 
 As well as some **icons** from the [Noun Project](http://thenounproject.com/) :
 * Folder by Simple Icons from The Noun Project
+* [Undo](https://thenounproject.com/browse/icons/term/undo/) by Alvida Black from The Noun Project (CC BY 3.0)
+* [Redo](https://thenounproject.com/browse/icons/term/redo/) by Alvida Black from The Noun Project (CC BY 3.0)
 * (and probably one or two others)
 
 ### Browser Support

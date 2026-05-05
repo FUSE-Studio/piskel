@@ -134,17 +134,3 @@
   color: white !important;
   text-decoration: none !important;
 }
-
-.settings-credits {
-  margin-top: 6px;
-  font-size: 10px;
-  line-height: 1.4;
-  color: #666;
-  text-align: right;
-  max-width: 320px;
-}
-.settings-credits a,
-.settings-credits a:hover {
-  color: #aaa !important;
-  text-decoration: underline !important;
-}
