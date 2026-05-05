@@ -266,5 +266,8 @@
   "js/app.js",
 
   // Bonus features !!
-  "js/snippets.js"
+  "js/snippets.js",
+
+  // FUSE wrapper integration (header buttons)
+  "js/fuse-header.js"
 ];
