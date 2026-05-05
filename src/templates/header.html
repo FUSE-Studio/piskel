@@ -40,6 +40,35 @@
   a.new-piskel-desktop, a.new-piskel-desktop:visited {
     color: black;
   }
+
+  .header-history-button {
+    float: left;
+    margin: 5px 0 0 8px;
+    height: 30px;
+    padding: 0 6px;
+    border: none;
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+  }
+  .header-history-button:hover {
+    background: rgba(255, 255, 255, 0.12);
+  }
+  .header-history-button img {
+    display: block;
+    height: 18px;
+    width: auto;
+  }
+  .header-history-button:disabled {
+    cursor: default;
+  }
+  .header-history-button:disabled:hover {
+    background: transparent;
+  }
+  .header-history-button:disabled img {
+    filter: grayscale(1);
+    opacity: 0.4;
+  }
 </style>
 <div class="fake-piskelapp-header">
   <a
@@ -48,6 +77,18 @@
     rel="tooltip"
     style="float:left"
     ><img src="logo.png" alt="FUSE Logo" style="scale:0.75"></a>
+  <button
+    type="button"
+    class="header-history-button header-undo-button"
+    title="Undo"
+    rel="tooltip"
+    ><img src="img/icons/undo.svg" alt="Undo"></button>
+  <button
+    type="button"
+    class="header-history-button header-redo-button"
+    title="Redo"
+    rel="tooltip"
+    ><img src="img/icons/redo.svg" alt="Redo"></button>
   <a
     href="/pixelart"
     target="_blank"
